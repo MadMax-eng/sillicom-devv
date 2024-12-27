@@ -1,0 +1,253 @@
+body{
+    margin: 0;
+    padding-top: 80px;
+    padding-left: 90px;
+    padding-right: 14px;
+}
+.video-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+}
+@media (max-width:900px)
+{
+    .video-grid{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media(mix-height:600px)
+{
+    .video-grid{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+.thumbnail{
+    width: 100%;
+    display: block;
+}
+.search{
+    display: block;
+}
+.channel-img img{
+    width: 40px;
+    border-radius: 50px;
+}
+.video-info-grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+}
+.title{
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.thumbnail-row{
+    margin-bottom: 10px;
+    position: relative;
+}
+.video-time{
+    background-color: black;
+    color:white;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+    font-family: Robot,Arial;
+    font-size: 1px;
+    font-weight: bold;
+    padding: 6px 5px;
+    border-radius: 4px;
+}
+p{
+    font-family: Roboto,Arial;
+}
+.author{
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+.views{
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+    margin-top: 0;
+}
+.channelimg-2 img{
+    width: 40px;
+    border-radius: 50px;
+}
+.title-2{
+    margin-top: 0;
+    margin-top: 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+}
+.thumbnail-row2{
+    margin-bottom: 10px;
+}
+.author-2{
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+.views-2{
+    color: rgb(96, 96, 96);
+    font-size: 12px;
+    margin-top: 0;
+}
+.header{
+    width: 100%;
+    height: 57px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid rgb(204, 204, 204);
+    z-index: 100;
+}
+.left{
+    width: 150px;
+    display: flex;
+}
+.hamburgerlog0{
+width: 24px;
+margin-right: 24px;
+margin-left: 24px;
+}
+.youtubelogo{
+    width: 90px;
+}
+.center{
+    display: flex;
+    flex: 1;
+    max-width: 500px;
+}
+.search{
+    width: 358px;
+    border: 1px solid rgb(204, 204, 204);
+    flex: 1;
+    width: 0;
+}
+.search::placeholder{
+    font-family: Roboto,Arial;
+    font-size: 1.1rem;
+    padding-left: 5px;
+}
+.button-search{
+    width: 55px;
+    border: 1px solid rgb(204, 204, 204);
+    border-left: none;
+    background-color: rgb(248, 248, 248);
+}
+.button-search,
+.button-voice{
+    position: relative;
+}
+.button-search .tooltip,
+.button-voice .tooltip{
+    position: absolute;
+    bottom: -30px;
+    right: 0;
+    left: 0;
+    background-color: gray;
+    border-radius: 5px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.2s;
+    pointer-events: none;
+    font-family: Roboto,Arial;
+    font-size: 12px;
+    padding:4px 8px;
+    white-space: nowrap;
+}
+.button-search:hover .tooltip,
+.button-voice:hover .tooltip{
+    opacity: 1;
+}
+
+.search-logo{
+    margin-top: 4px;
+    width: 24px;
+}
+.button-voice{
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(248, 248, 248);
+    border-radius: 50%;
+    margin-left: 7px;
+    background-color: rgb(248, 248, 248);
+
+}
+.voice-logo{
+    margin-top: 4px;
+    width: 22px;
+    
+}
+.right{
+    width: 200px;
+}
+.right{
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+
+}
+.upload{
+    width: 30px;
+}
+.apps{
+    width: 30px;
+}
+.noti{
+    width: 30px;
+}
+.container-noti{
+    position: relative;
+}
+.noti-count{
+    background-color: red;
+    font-size: 15px;
+    padding: 1px 6px;
+    border-radius: 50%;
+    position: absolute;
+    top: -2px;
+    right: -5px;
+
+}
+.my-channel{
+    margin-right: 20px;
+    width: 30px;
+}
+.sidebar{
+    background-color: white;
+    position: fixed;
+    bottom: 0;
+    top: 57px;
+    left: 0;
+    width: 72px;
+    z-index: 200;
+    padding-top: 2px;
+}
+.sidebar-link{
+    height: 76px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-family: Roboto,Aria;
+}
+
+.sidebar-link img{
+    width: 24px;
+    margin-bottom: 6.5px;
+}
+.sidebar-link:hover{
+    background-color: rgb(246, 246, 246);
+    cursor: pointer;
+}

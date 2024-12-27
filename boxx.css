@@ -1,0 +1,77 @@
+body{
+    background: black;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cat{
+    background-color: white;
+    width: 360px;
+    height: 110px;
+    display: flex;
+    gap: 5px;
+    border-radius: 5px;
+}.pic{
+    width: 100px;
+    height: 100px;
+    margin-top: 5px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+.pic img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+.name{
+    width: 100px;
+    height: 100px;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+}
+.ovliver{
+    width: 100%;
+    height: 33.3px;
+}
+.ovliver p{
+    margin-bottom: 0;
+}
+.thecat p{
+    margin-top: 0;
+    margin-bottom: 0;
+    
+}
+.popular p{
+    margin-top: 0;
+}
+.thecat{
+    width: 100%;
+    height: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.popular{
+    width: 100%;
+    height: 33.3px;
+}
+.follow{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    margin-left: 35px;
+}
+.follow button{
+    color: white;
+    background-color: rgb(97, 97, 252);
+font-family: Arial, Helvetica, sans-serif;
+padding: 5px 10px;
+border: none;
+border-radius: 4px;
+font-size: 1.1rem;
+}
